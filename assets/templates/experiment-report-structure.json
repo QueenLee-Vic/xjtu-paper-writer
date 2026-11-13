@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "kind": "experiment_report_structure",
+  "source_role": "skill_defaults",
+  "source_reference_use": "cover structure and chapter hierarchy only; no source typography or content",
+  "distribution": {
+    "include_original_reference": false,
+    "include_extracted_badge": true
+  },
+  "covers": {
+    "personal_experiment": {
+      "title": "个人实验报告",
+      "fields": [
+        "course_name",
+        "experiment_name",
+        "name",
+        "major",
+        "class_name",
+        "student_id",
+        "date"
+      ]
+    },
+    "group_experiment": {
+      "title": "小组实验报告",
+      "fields": [
+        "course_name",
+        "experiment_name",
+        "members",
+        "date"
+      ],
+      "member_columns": [
+        {
+          "key": "class_name",
+          "label": "班级"
+        },
+        {
+          "key": "student_id",
+          "label": "学号"
+        },
+        {
+          "key": "name",
+          "label": "姓名"
+        }
+      ]
+    }
+  },
+  "badge": {
+    "default": "local_if_available",
+    "local_resource": "assets/local/branding/xjtu-mark.png",
+    "local_manifest": "assets/local/branding/manifest.json",
+    "width_cm": 9,
+    "local_use_enabled": true,
+    "public_redistribution_allowed": true,
+    "fallback": "text_school_name",
+    "authorization": "User confirmed distribution with this Skill for XJTU students course reports and academic writing; no official endorsement or broader license asserted"
+  },
+  "cover_layout": {
+    "alignment": "center",
+    "first_line_chars": 0,
+    "top_gap_pt": 72,
+    "field_gap_pt": 12,
+    "date_gap_pt": 24,
+    "body_starts_new_page": true
+  },
+  "chapters": [
+    {
+      "id": "purpose",
+      "title": "实验目的",
+      "level": 1
+    },
+    {
+      "id": "equipment",
+      "title": "实验设备",
+      "level": 1,
+      "software_title": "实验环境与软件"
+    },
+    {
+      "id": "content",
+      "title": "实验内容",
+      "level": 1,
+      "children": "provided_experiment_tasks_only"
+    },
+    {
+      "id": "questions",
+      "title": "思考题",
+      "level": 1,
+      "condition": "teacher_questions_provided"
+    },
+    {
+      "id": "contributions",
+      "title": "小组分工",
+      "level": 1,
+      "condition": "group_only",
+      "evidence_required": "provided_member_contributions"
+    },
+    {
+      "id": "reflection",
+      "title": "心得与建议",
+      "level": 1
+    }
+  ],
+  "format_source": "references/standards/default-style.json via existing resolve_style_config and format_docx; teacher sources take precedence",
+  "required_mode": "create_only"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "default_intensity": "standard",
+  "intensities": {
+    "light": {"allowed": ["typo", "punctuation", "grammar", "local_word_order", "obvious_redundancy", "explicit_term_correction"], "cross_paragraph": false, "semantic_review_required_for_changes": true},
+    "standard": {"allowed": ["sentence_clarity", "transitions", "academic_wording", "redundancy", "term_explanation"], "cross_paragraph": false, "semantic_review_required_for_changes": true},
+    "deep": {"allowed": ["sentence_clarity", "transitions", "academic_wording", "redundancy", "authorized_local_reorganization"], "cross_paragraph": "explicit_contiguous_same_section_groups_with_itemized_semantic_review", "semantic_review_required_for_changes": true}
+  },
+  "terms": ["反向传播", "梯度下降", "有限元分析", "响应面法", "拉曼光谱", "信噪比", "均方误差", "过拟合", "泛化能力"],
+  "semantic_dimensions": ["facts", "independent_information", "causality_and_correlation", "conclusion_strength", "conditions_and_scope", "negation", "completion_and_time", "comparison_and_attribution", "author_intent", "intensity_boundary"],
+  "semantic_cues": {
+    "uncertainty": ["可能", "或许", "尚不能", "初步表明", "推测", "倾向于"],
+    "certainty": ["必然", "充分证明", "完全证实", "显著优于", "首次", "填补空白"],
+    "negation": ["未发现", "没有", "未能", "不能", "不具有", "并非", "不存在", "不显著"],
+    "causality": ["导致", "引起", "因为", "因而", "因此", "相关", "关联"],
+    "conditions_scope": ["仅", "在本实验条件下", "在本研究范围内", "所有", "任何", "限定于", "前提"],
+    "completion_time": ["计划开展", "拟开展", "正在", "已经完成", "已完成", "尚未", "完成了", "将开展"],
+    "comparison_attribution": ["高于", "低于", "优于", "劣于", "相比", "文献", "作者", "我们", "小组"]
+  },
+  "units": ["μm", "µm", "μs", "µs", "kHz", "MHz", "GHz", "mV", "kV", "mA", "kPa", "MPa", "kΩ", "mW", "kJ", "mol", "mm", "cm", "nm", "ms", "min", "kg", "mg", "mL", "dB", "Hz", "Pa", "rad", "℃", "°C", "Ω", "V", "A", "s", "h", "m", "g", "L", "W", "J", "K"],
+  "immutable_roles": ["heading", "references", "caption", "code", "data"],
+  "publication_policy": "automatic invariants AND hash-bound itemized Agent semantic review; no DOCX writer in Phase 4B-1",
+  "detector_score_is_quality_metric": false
+}

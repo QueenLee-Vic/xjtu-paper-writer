@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "local_use_authorized_by": "User permits distribution with this Skill for XJTU student course reports and academic writing",
+  "public_redistribution_authorized": true,
+  "resource": "assets/local/branding/xjtu-mark.png",
+  "sha256": "bd468bd6878f57a20b4cfb8081642acf1ef0db8c56ba854a40fe2c2e4ee4db24",
+  "width_px": 672,
+  "height_px": 190,
+  "private_text_extracted": false,
+  "image_transformed": false,
+  "distribution_scope": "User confirmed: with this Skill for XJTU students course reports and academic writing; not official university certification, no broader or commercial grant asserted"
+}

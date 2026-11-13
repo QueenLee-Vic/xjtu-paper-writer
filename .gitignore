@@ -1,0 +1,17 @@
+# Keep credentials and student work out of the public repository.
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.key
+*.pem
+*.log
+.xjtu-runtime/
+outputs/
+workspace/
+tests/
+dist/
+assets/sources/
+.claude/
+.agents/
+.opencode/

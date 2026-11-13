@@ -1,0 +1,25 @@
+{
+  "version": "1.0.1",
+  "status": "prepared_local_release_pending_remote_approval",
+  "built_utc": "2026-11-13T20:13:58.906004+00:00",
+  "based_on": "1.0.1-rc.3",
+  "base_zip_sha256": "bdf2e1cca48bb17ddf0b9d11072d659247630d94d30b6365dd96e29231c0e09d",
+  "grade": "B",
+  "license": {
+    "spdx_id": "MIT",
+    "year": 2026,
+    "copyright_holder": "QueenLee-Vic",
+    "holder_confirmed": true,
+    "scope": "Project-owned or authorized code and documentation only",
+    "excluded_resources": [
+      "assets/local/branding/xjtu-mark.png"
+    ]
+  },
+  "repository": "QueenLee-Vic/xjtu-paper-writer",
+  "remote_publication_approved": false,
+  "github_upload_performed": false,
+  "workspace_security": "Linux x86_64/aarch64 Landlock ABI >=3; unsupported systems fail closed",
+  "word_validation": "User accepted ordinary V1.0 personal/group reports only; not complex formulas, all mathematical fonts or all Word objects",
+  "opencode_independent_installation": "previously blocked; automatic selection remains host/model dependent",
+  "manifest_note": "FILELIST.json lists all payload files. SHA256SUMS.json hashes every listed file except itself; external ZIP SHA256 authenticates the complete archive."
+}

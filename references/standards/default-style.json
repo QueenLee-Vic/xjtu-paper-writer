@@ -1,0 +1,1229 @@
+{
+  "schema_version": "1.0",
+  "kind": "style_source",
+  "id": "skill-defaults",
+  "role": "skill_defaults",
+  "source": "Skill custom defaults: default-style.json",
+  "properties": {
+    "page.size": {
+      "value": "A4",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.orientation": {
+      "value": "portrait",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.margin.top_cm": {
+      "value": 2.54,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.margin.bottom_cm": {
+      "value": 2.54,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.margin.left_cm": {
+      "value": 3.175,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.margin.right_cm": {
+      "value": 3.175,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "page.header_distance_cm": {
+      "value": 1.5,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "page.footer_distance_cm": {
+      "value": 1.75,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "body.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.bold": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.alignment": {
+      "value": "justify",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.first_line_chars": {
+      "value": 2,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "body.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "body.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1.25,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.size_pt": {
+      "value": 16,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.bold": {
+      "value": true,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "title.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "title.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.size_pt": {
+      "value": 12,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.bold": {
+      "value": true,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.alignment": {
+      "value": "left",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "heading.1.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.1.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.size_pt": {
+      "value": 12,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.bold": {
+      "value": true,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.alignment": {
+      "value": "left",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "heading.2.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.2.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.bold": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.alignment": {
+      "value": "left",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "heading.3.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "heading.3.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.bold": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "caption.figure.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.bold": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.hanging_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "caption.table.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.bold": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.italic": {
+      "value": false,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.alignment": {
+      "value": "justify",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.first_line_chars": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.hanging_pt": {
+      "value": 21,
+      "status": "default",
+      "source": "Skill custom defaults",
+      "deprecated_default_for": "references.hanging_chars"
+    },
+    "references.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.line_spacing": {
+      "value": {
+        "rule": "exact",
+        "value": 13,
+        "unit": "pt"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.position": {
+      "value": "below",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.position": {
+      "value": "above",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.numbering": {
+      "value": "sequential",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.numbering": {
+      "value": "sequential",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "table.style": {
+      "value": "grid",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.display": {
+      "value": "standalone",
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "equation.alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill custom defaults",
+      "deprecated_default_for": "equation.body_alignment"
+    },
+    "equation.numbering": {
+      "value": "sequential",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.number_position": {
+      "value": "right",
+      "status": "default",
+      "source": "Skill custom defaults",
+      "deprecated_default_for": "equation.number_alignment"
+    },
+    "equation.preserve_omml": {
+      "value": true,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.citation_style": {
+      "value": "numeric",
+      "status": "default",
+      "source": "Skill custom defaults"
+    },
+    "image.resize_policy": {
+      "value": "preserve_aspect_ratio",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "references.hanging_chars": {
+      "value": 1.64,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.figure.numbering_format": {
+      "value": "图{n}",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "caption.table.numbering_format": {
+      "value": "表{n}",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "table.cell.font.eastAsia": {
+      "value": "宋体",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "table.cell.font.latin": {
+      "value": "Times New Roman",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "table.cell.size_pt": {
+      "value": 10.5,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "table.cell.color": {
+      "value": "000000",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "image.alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "image.max_width": {
+      "value": "text_area",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "image.quality_policy": {
+      "value": "print_clear_vector_or_high_resolution",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.body_alignment": {
+      "value": "center",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.number_alignment": {
+      "value": "right",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.center_reference": {
+      "value": "text_area",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.numbering_format": {
+      "value": "（{n}）",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.paragraph.alignment": {
+      "value": "justify",
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.paragraph.first_line_chars": {
+      "value": 2,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.paragraph.space_before_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.paragraph.space_after_pt": {
+      "value": 0,
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.paragraph.line_spacing": {
+      "value": {
+        "rule": "multiple",
+        "value": 1,
+        "unit": "multiple"
+      },
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    },
+    "equation.tab_stops": {
+      "value": [
+        {
+          "position": 19.9,
+          "unit": "char",
+          "alignment": "center",
+          "leader": "none"
+        },
+        {
+          "position": 39.81,
+          "unit": "char",
+          "alignment": "right",
+          "leader": "none"
+        }
+      ],
+      "status": "default",
+      "source": "Skill V1.0 defaults frozen by user, Phase 3B-1A",
+      "default_confirmation": {
+        "status": "user_confirmed",
+        "basis": "Phase 3B-1A explicit user specification"
+      }
+    }
+  }
+}
