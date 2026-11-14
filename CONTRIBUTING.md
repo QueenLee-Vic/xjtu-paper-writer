@@ -1,6 +1,6 @@
 # 贡献说明
 
-公开仓库建立后，可通过其Issue反馈Bug或功能建议，通过Pull Request提交修改。计划仓库为 `QueenLee-Vic/xjtu-paper-writer`；请在其实际公开后使用Issue和Pull Request。
+可通过 `QueenLee-Vic/xjtu-paper-writer` 的Issue反馈Bug或建议，通过Pull Request提交修改。
 
 反馈Bug请附版本、Linux/内核与依赖版本、去标识化的重现步骤、预期与实际结果。优先使用合成文本和数据；不要直接附真实学生论文、学号、电话、实验原始数据或模型服务配置。安全漏洞不要在公开Issue披露细节，先阅读 [SECURITY](SECURITY.md)。
 

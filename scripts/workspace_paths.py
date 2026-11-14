@@ -74,12 +74,31 @@ def _landlock(workspace, workspace_fd):
     finally:
         os.close(ruleset)
 
+def _require_workspace_policy():
+    """SkillHub public builds require valid policy even when legacy env is set."""
+    import json, stat
+    expected = {'schema_version': '1.0', 'require_explicit_workspace': True,
+                'allow_legacy_test_fallback': False}
+    try:
+        fd = os.open(SKILL_ROOT/'WORKSPACE-REQUIRED.json',
+                     os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK | os.O_CLOEXEC)
+        with os.fdopen(fd, 'r', encoding='utf-8') as stream:
+            st = os.fstat(stream.fileno())
+            if not stat.S_ISREG(st.st_mode) or st.st_size > 4096:
+                raise ValueError('Invalid policy file type or size')
+            policy = json.loads(stream.read(4097))
+        if (not isinstance(policy, dict) or policy.keys() != expected.keys()
+                or any(type(policy[k]) is not type(v) or policy[k] != v
+                       for k, v in expected.items())):
+            raise ValueError('Public workspace policy cannot be weakened')
+    except (OSError, ValueError, UnicodeError) as exc:
+        raise RuntimeError('Missing or invalid WORKSPACE-REQUIRED.json; execution refused') from exc
+
 def _initialize():
     global _WORKSPACE
+    _require_workspace_policy()
     if '--workspace' not in sys.argv:
         if '--help' in sys.argv or '-h' in sys.argv:
-            return
-        if os.environ.get('XJTU_LEGACY_TESTS') == '1' and not (SKILL_ROOT/'WORKSPACE-REQUIRED').exists():
             return
         raise RuntimeError('Explicit --workspace /authorized/existing/directory required; install directory is read-only')
     i = sys.argv.index('--workspace')
@@ -164,23 +183,6 @@ def output_root(role):
         raise ValueError('Unknown output role')
     if _WORKSPACE is not None:
         return _WORKSPACE
-    if os.environ.get('XJTU_LEGACY_TESTS')=='1' and not (SKILL_ROOT/'WORKSPACE-REQUIRED').exists():
-        import json
-        # Maintainer-only data is deliberately absent from the distribution.
-        mapping=json.loads((SKILL_ROOT/'tests/legacy-output-roots.json').read_text())
-        relative=Path(mapping[role])
-        if relative.is_absolute() or '..' in relative.parts or relative.parts[:2]!=('tests','outputs'):
-            raise ValueError('Invalid maintenance output mapping')
-        candidate=SKILL_ROOT/relative
-        for component in [candidate,*candidate.parents]:
-            if component==SKILL_ROOT:
-                break
-            if component.is_symlink():
-                raise ValueError('Maintenance output escaped source root or contains a symlink')
-        target=candidate.resolve()
-        if not target.is_relative_to(SKILL_ROOT):
-            raise ValueError('Maintenance output escaped source root')
-        return target
     if '--help' in sys.argv or '-h' in sys.argv:
         return Path(os.devnull)  # import-only sentinel; CLI exits without writing
     raise RuntimeError('Authorized workspace required for output')

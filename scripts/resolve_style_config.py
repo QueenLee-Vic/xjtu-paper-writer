@@ -9,6 +9,7 @@ import json
 import math
 from pathlib import Path
 import re
+from safe_preview import preview_text
 
 ROOT = data_root()
 DEFAULTS = SKILL_ROOT/'references/standards/default-style.json'
@@ -417,9 +418,9 @@ def resolve(request, base_dir=ROOT):
 
 
 def preview(config):
-    def cell(v):return (json.dumps(v,ensure_ascii=False,sort_keys=True) if not isinstance(v,str) else v).replace('|','\\|').replace('\n',' ')
+    def cell(v):return preview_text(v, 'table')
     lines=['# 排版配置预览','', '仅配置合并，未修改 Word 文件。候选与 unknown 保留在 alternatives，待确认属性不进入 apply_properties。',
-           '',f"模式：{config['mode']}；可执行属性：{len(config['apply_properties'])}；待确认：{len(config['pending_confirmation'])}。",'',
+           '',f"模式：{preview_text(config['mode'])}；可执行属性：{len(config['apply_properties'])}；待确认：{len(config['pending_confirmation'])}。",'',
            '| 属性 | 最终设置（或预览回退值） | 来源 | 状态 | 可执行 |','| --- | --- | --- | --- | --- |']
     for k,r in config['effective_properties'].items():
         lines.append('| '+' | '.join(cell(v) for v in [k,r['value'],r['source_id'] or '未确定',r['status']+' / '+r['resolution_status']+('；待确认' if r['confirmation_required'] else ''),r['apply']])+' |')
@@ -428,18 +429,18 @@ def preview(config):
         keys=[k for k,r in config['effective_properties'].items() if r['source_id'] and any(s['id']==r['source_id'] and s['role']==role for s in config['sources'])]
         lines.append(f'- {role}：{len(keys)} 项。')
     lines+=['','冲突与覆盖：','']
-    for c in config['conflicts']:lines.append('- '+cell(c))
+    for c in config['conflicts']:lines.append('- '+preview_text(c))
     if not config['conflicts']:lines.append('- 无已解析值冲突。')
     lines+=['','待确认：','']
-    for p in config['pending_confirmation']:lines.append('- '+cell(p))
+    for p in config['pending_confirmation']:lines.append('- '+preview_text(p))
     if not config['pending_confirmation']:lines.append('- 无。')
     lines+=['','未确定及输入诊断：','']
     for k,r in config['effective_properties'].items():
         uncertain=[{'source_id':a['source_id'],'status':a['status'],'value':a['raw']['value']} for a in r['alternatives'] if a['status'] in ['candidate','unknown','invalid']]
-        if uncertain:lines.append('- '+k+'：'+cell(uncertain))
-    for d in config['diagnostics']:lines.append('- '+cell(d))
+        if uncertain:lines.append('- '+preview_text(k)+'：'+preview_text(uncertain))
+    for d in config['diagnostics']:lines.append('- '+preview_text(d))
     lines+=['','待布局验证：','']
-    for item in config.get('pending_validation',[]):lines.append('- '+cell(item))
+    for item in config.get('pending_validation',[]):lines.append('- '+preview_text(item))
     lines+=['','写入接口：仅定义，未实现；输入/输出路径及待确认未齐备时 ready_for_writer=false。','']
     return '\n'.join(lines)
 

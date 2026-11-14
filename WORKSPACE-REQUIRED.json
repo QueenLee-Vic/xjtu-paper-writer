@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0",
+  "require_explicit_workspace": true,
+  "allow_legacy_test_fallback": false
+}

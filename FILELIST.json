@@ -14,7 +14,7 @@
   "SHA256SUMS.json",
   "SKILL.md",
   "THIRD_PARTY_NOTICES.md",
-  "WORKSPACE-REQUIRED",
+  "WORKSPACE-REQUIRED.json",
   "assets/local/branding/manifest.json",
   "assets/local/branding/xjtu-mark.png",
   "assets/templates/experiment-report-structure.json",
@@ -56,5 +56,6 @@
   "scripts/render_docx.py",
   "scripts/resolve_style_config.py",
   "scripts/review_polishing_diff.py",
+  "scripts/safe_preview.py",
   "scripts/workspace_paths.py"
 ]

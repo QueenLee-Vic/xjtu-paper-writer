@@ -4,7 +4,7 @@ from workspace_paths import SKILL_ROOT, data_root, output_root
 import argparse
 from copy import deepcopy
 import difflib
-import html
+from safe_preview import preview_text
 import json
 from pathlib import Path
 import re
@@ -143,12 +143,12 @@ def build_plan(input_docx,mapping,request,candidate,semantic_reviews=None,upstre
     return outcome
 
 def preview(plan):
-    def cell(v):return html.escape(str(v),quote=False).replace('|','\\|').replace('\n','<br>')
-    lines=['# DOCX 润色修改预览','',f"状态：{plan['status']}。本阶段只读，不允许写入 DOCX。",'', '| 段落 ID | 原文 | 候选 | Run 映射 | 语义审查 | 下一阶段局部候选 | 本阶段写入 |','| --- | --- | --- | --- | --- | --- | --- |']
+    def cell(v):return preview_text(v, 'table')
+    lines=['# DOCX 润色修改预览','',f"状态：{preview_text(plan['status'])}。本阶段只读，不允许写入 DOCX。",'', '| 段落 ID | 原文 | 候选 | Run 映射 | 语义审查 | 下一阶段局部候选 | 本阶段写入 |','| --- | --- | --- | --- | --- | --- | --- |']
     for e in plan['edits']:lines.append('| '+' | '.join(cell(v) for v in [e['paragraph_id'],e['old_text'],e['new_text'],e['run_mapping']['reason'],e['semantic_review_verified'],e['eligible_for_future_simple_run_patch'],False])+' |')
     lines+=['','## 待处理事项','']
     for e in plan['edits']:
-        if e['pending_items']:lines.append('- '+e['paragraph_id']+'：'+cell('; '.join(e['pending_items'])))
+        if e['pending_items']:lines.append('- '+preview_text(e['paragraph_id'])+'：'+preview_text('; '.join(e['pending_items'])))
     if not plan['edits']:lines.append('没有正文修改操作；仍需查看完整保护审查状态。检查模式只交建议，未生成 DOCX。')
     lines.append('实际 DOCX 写入与输出保真留待 4B-2B；须重新校验源文件、Run/对象及全部审查证据。本阶段没有写入许可。')
     lines+=['','完整正文交付状态与局部映射可行性分开；复杂对象占位、语义未审及格式归属不明不会被清除。Microsoft Word 与页面视觉效果未验证。','']

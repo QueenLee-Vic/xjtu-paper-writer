@@ -1,9 +1,9 @@
 {
-  "version": "1.0.1",
-  "status": "prepared_local_release_pending_remote_approval",
-  "built_utc": "2026-11-13T20:13:58.906004+00:00",
-  "based_on": "1.0.1-rc.3",
-  "base_zip_sha256": "bdf2e1cca48bb17ddf0b9d11072d659247630d94d30b6365dd96e29231c0e09d",
+  "version": "1.0.2",
+  "status": "local_candidate_pending_release_authorization",
+  "built_utc": "2026-11-14T13:28:42.338314+00:00",
+  "based_on": "GitHub v1.0.1",
+  "base_zip_sha256": "decde552b0e11da4bf0222a1e454c57f2ba4afeab3c4d0f42843ab795b1c5039",
   "grade": "B",
   "license": {
     "spdx_id": "MIT",
@@ -21,5 +21,8 @@
   "workspace_security": "Linux x86_64/aarch64 Landlock ABI >=3; unsupported systems fail closed",
   "word_validation": "User accepted ordinary V1.0 personal/group reports only; not complex formulas, all mathematical fonts or all Word objects",
   "opencode_independent_installation": "previously blocked; automatic selection remains host/model dependent",
-  "manifest_note": "FILELIST.json lists all payload files. SHA256SUMS.json hashes every listed file except itself; external ZIP SHA256 authenticates the complete archive."
+  "manifest_note": "FILELIST.json lists all payload files. SHA256SUMS.json hashes every listed file except itself; external ZIP SHA256 authenticates the complete archive.",
+  "security_source_skillhub_zip_sha256": "5e89de0c5e9676804d92d904c882d88e1ec8786c1892d835ae3b225d03aa1d7e",
+  "workspace_policy": "WORKSPACE-REQUIRED.json",
+  "legacy_test_fallback": false
 }
